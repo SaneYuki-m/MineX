@@ -115,7 +115,6 @@
 				00652F642081D1E300801867 /* Frameworks */,
 				00652F652081D1E300801867 /* Resources */,
 				A33A45E15345E1B85C3DE555 /* [CP] Embed Pods Frameworks */,
-				0A4085AADA35F0F19B10B819 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,21 +174,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A4085AADA35F0F19B10B819 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MineX/Pods-MineX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		76CE182133E58B45BDF4C97A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

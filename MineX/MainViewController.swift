@@ -131,6 +131,7 @@ class MainViewController: UIViewController,GADBannerViewDelegate {
                 xLabelNum = xLabelNum - 1
                 usrD.set(xLabelNum, forKey: "collectionX")
                 xLabel.text = String(xLabelNum)+"行：必要スコア"+String((xLabelNum-2)*5)
+                usrD.set(xLabelNum*yLabelNum*bombLabelNum, forKey: "rank")
             }else{
                 let alert = UIAlertController(
                     title: "Alert!",
@@ -163,6 +164,7 @@ class MainViewController: UIViewController,GADBannerViewDelegate {
                 yLabelNum = yLabelNum - 1
                 usrD.set(yLabelNum, forKey: "collectionY")
                 yLabel.text = String(yLabelNum)+"列：必要スコア"+String((yLabelNum-2)*5)
+                usrD.set(xLabelNum*yLabelNum*bombLabelNum, forKey: "rank")
             }else{
                 let alert = UIAlertController(
                     title: "Alert!",
@@ -195,6 +197,7 @@ class MainViewController: UIViewController,GADBannerViewDelegate {
                 bombLabelNum = bombLabelNum - 1
                 usrD.set(bombLabelNum, forKey: "bombNumber")
                 bombLabel.text = String(bombLabelNum)+"個：必要スコア"+String((bombLabelNum+1)*5)
+                usrD.set(xLabelNum*yLabelNum*bombLabelNum, forKey: "rank")
             }else{
                 let alert = UIAlertController(
                     title: "Alert!",
